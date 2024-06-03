@@ -4,8 +4,8 @@ This module provides a set of functions to work with Apache Avro Tools.
 
 Shorthand avro tools functions provided by this module are:
 
-- `idl2schemata`: a helper function to Convert an Avro IDL file to Avro schema files in the provided directory
-- `idl`: a helper function to Convert an Avro IDL file to an Avro schema file
+- idl2schemata: a helper function to Convert an Avro IDL file to Avro schema files in the provided directory
+- idl: a helper function to Convert an Avro IDL file to an Avro schema file
 
 For more advanced usage, you can use the avro-tools function to get a container with Apache Avro Tools installed.
 
@@ -17,11 +17,9 @@ dagger call --version=1.11.3 avro-tools with-file --path /app/file --source .\av
 
 """
 
-import dataclasses
 from typing import Annotated
 
-import dagger
-from dagger import Doc, dag, function, object_type, Directory, field, Container, File
+from dagger import Doc, dag, function, object_type, Directory, Container, File
 
 
 @object_type
