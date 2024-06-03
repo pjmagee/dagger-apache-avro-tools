@@ -16,6 +16,6 @@ This module uses the following dependencies:
 - Python 3.10 or later
 - Dagger
 
-## Version
+## Avro tools version
 
-The default version of Apache Avro Tools used is 1.11.3. You can specify a different version when creating an instance of the `ApacheAvroTools` class.
+The default version of Apache Avro Tools used is 1.11.3. You can specify a different version by using `dagger call --version=1.11.3 avro-tools`
